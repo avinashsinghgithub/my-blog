@@ -8,7 +8,6 @@ const LoginPage = () => {
   const navigate = useNavigate();
   const login = async () => {
     try {
-      console.log("login method has been called");
       await signInWithEmailAndPassword(getAuth(), email, password);
       navigate("/articles");
     } catch (e) {
@@ -30,7 +29,7 @@ const LoginPage = () => {
         onChange={(e) => setPassword(e.target.value)}
       />
       <button onClick={login}>Login</button>
-      <Link to="create-account"></Link>
+      <Link to="/create-account">Don't have account? create one here</Link>
     </>
   );
 };

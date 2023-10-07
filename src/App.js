@@ -1,13 +1,13 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar";
-import HomePage from "./src/pages/HomePage";
-import AboutPage from "./src/pages/AboutPage";
-import ArticlesListPage from "./src/pages/ArticlesListPage";
-import ArticlePage from "./src/pages/ArticlePage";
-import NotFoundPage from "./src/pages/NotFoundPage";
-import LoginPage from "./src/pages/LoginPage";
-import CreateAccountPage from "./src/pages/CreateAccountPage";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ArticlesListPage from "./pages/ArticlesListPage";
+import ArticlePage from "./pages/ArticlePage";
+import NotFoundPage from "./pages/NotFoundPage";
+import LoginPage from "./pages/LoginPage";
+import CreateAccountPage from "./pages/CreateAccountPage";
 
 function App() {
   return (
