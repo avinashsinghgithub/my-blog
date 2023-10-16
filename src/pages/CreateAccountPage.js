@@ -12,6 +12,7 @@ const CreateAccountPage = () => {
         try{
             if(password !== confirmPassword){
                 setError('Password and confirm password do not match');
+                return;
             }
             await createUserWithEmailAndPassword(getAuth(),email, password);
             navigate('/articles');
@@ -22,7 +23,7 @@ const CreateAccountPage = () => {
     return (
         <>
           <h1>Create Account</h1>
-          {(error) => error && <p className="error">{error}</p>}
+          {error && <p className="error">{error}</p>}
           <input
             placeholder="your email address"
             value={email}
